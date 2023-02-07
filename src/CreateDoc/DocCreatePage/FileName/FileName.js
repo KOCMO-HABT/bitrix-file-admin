@@ -12,8 +12,8 @@ export const FileName = async () => {
     let url = new URL(window.location.href);
     let path = url.searchParams.get('path');
 
-    if (/\/src\/{0,1}$/.test(path)) extension = 'js';
-    if (/\/server\/{0,1}$/.test(path)) extension = 'php';
+    if (/\/src\/{0,1}/.test(path)) extension = 'js';
+    if (/\/server\/{0,1}/.test(path)) extension = 'php';
 
     // получаем текст из буфера обмена
     let name = await GetClipBoard();

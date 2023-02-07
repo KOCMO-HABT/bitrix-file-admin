@@ -7,8 +7,6 @@ export const DocCreatePage = async () => {
     // генерируем название для файла
     let { name, extension } = await FileName();
 
-    console.log('name', name);
-
     let fileNameNode = document.querySelector('input[name="filename"]');
 
     fileNameNode.value = name;
