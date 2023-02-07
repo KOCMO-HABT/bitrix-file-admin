@@ -1,6 +1,6 @@
-import { OpenDoc } from "./src/OpenDoc.js";
-import { CreateDocButton } from "./src/CreateDoc/CreateDocButton/CreateDocButton.js";
-import { DocCreatePage } from "./src/CreateDoc/DocCreatePage/DocCreatePage.js";
+import { OpenDoc } from "./src/Components/OpenDoc.js";
+import { CreateDocButton } from "./src/Components/CreateDoc/CreateDocButton/CreateDocButton.js";
+import { DocCreatePage } from "./src/Components/CreateDoc/DocCreatePage.js";
 
 
 if (location.pathname === '/bitrix/admin/fileman_admin.php') {

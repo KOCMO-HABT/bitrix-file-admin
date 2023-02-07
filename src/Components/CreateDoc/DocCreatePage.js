@@ -1,4 +1,4 @@
-import { FileName } from "./FileName/FileName.js";
+import { FileName } from "./../../Tools/FileName/FileName.js";
 
 /*
  * страница создания файла
