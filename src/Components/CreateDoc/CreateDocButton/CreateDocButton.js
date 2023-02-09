@@ -5,7 +5,7 @@ import { IsExistElem } from "./IsExistElem.js";
  */
 export const CreateDocButton = async () => {
     // дожидаемся когда появится элемент с кнопками для создания файла
-    await IsExistElem('.bx-core-popup-menu');
+    await IsExistElem('.bx-core-popup-menu.bx-core-popup-menu-no-icons');
 
     // ссылка для создания файла
     let link = document.querySelector('a[href*="fileman_html_edit"]');
