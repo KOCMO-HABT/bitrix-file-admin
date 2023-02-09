@@ -20,8 +20,11 @@ export const FileName = async (type = 'file') => {
     // разделяем на слова
     name = name.split(' ');
 
+    // удаляем пустые строки из массива
+    name = name.filter(elem => elem !== '');
+
     // возводим первую букву в верхний регистр
-    for (const key in name) name[key] = FirstUpperCase(name[key]);
+    for (const key in name) name[key] = FirstUpperCase(name[key].trim());
 
     name = name.join('');
 
